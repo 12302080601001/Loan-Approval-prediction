@@ -20,7 +20,7 @@ with st.form("loan_form"):
     submitted = st.form_submit_button("Predict Loan Approval")
 
 if submitted:
-    api_url = "http://127.0.0.1:8000/predict"
+    api_url = "https://loan-approval-prediction-qgai.onrender.com/predict"
     input_data = {
         "Age": age,
         "Employment_Years": employment_years,
